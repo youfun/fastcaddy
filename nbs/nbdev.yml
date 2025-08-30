@@ -1,0 +1,9 @@
+project:
+  output-dir: _docs
+
+website:
+  title: "fastcaddy"
+  site-url: "https://AnswerDotAI.github.io/fastcaddy"
+  description: "A simple python wrapper for using the Caddy API"
+  repo-branch: main
+  repo-url: "https://github.com/AnswerDotAI/fastcaddy"
