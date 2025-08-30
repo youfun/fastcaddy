@@ -152,3 +152,15 @@ checklink/cookies.txt
 _docs
 
 fastcaddy/fastcaddy
+
+# Go build artifacts
+*.exe
+fastcaddy-test
+*-test
+examples/*/main
+examples/*/*-test
+examples/*/advanced-test
+examples/*/domain-mgmt-test
+
+# Go module cache
+go.sum.bak
