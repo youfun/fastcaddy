@@ -1,27 +1,22 @@
 # FastCaddy Examples
 
-This directory contains comprehensive examples demonstrating the FastCaddy programming interface for both Python and Go versions.
+This directory contains comprehensive examples demonstrating the FastCaddy programming interface.
 
 ## Directory Structure
 
 ```
 examples/
-├── advanced/                    # Go advanced examples
-│   └── main.go                 # Comprehensive Go programming interface demo
-├── basic/                      # Basic Go examples (existing)
+├── advanced/                    # Advanced examples
+│   └── main.go                 # Comprehensive programming interface demo
+├── basic/                      # Basic examples
 │   └── main.go                 # Basic usage demonstration
 ├── domain-management/          # Domain management examples
-│   └── main.go                 # Go domain management specialized demo
-└── test-utils/                 # Test utilities (existing)
+│   └── main.go                 # Domain management specialized demo
+└── test-utils/                 # Test utilities
     └── main.go                 # Testing utilities
-
-python-version/examples/
-├── advanced_example.py         # Python advanced programming interface demo
-├── domain_management.py        # Python domain management specialized demo
-└── programming_interface_complete.ipynb  # Jupyter notebook with complete examples
 ```
 
-## Go Examples
+## Examples
 
 ### 1. Basic Examples (`examples/basic/main.go`)
 - Environment setup
@@ -45,48 +40,21 @@ python-version/examples/
 - Wildcard domain handling
 - Best practices demonstration
 
-## Python Examples
-
-### 1. Advanced Example (`python-version/examples/advanced_example.py`)
-- Comprehensive domain management
-- Batch operations
-- Configuration validation
-- Error handling
-- System status checking
-
-### 2. Domain Management (`python-version/examples/domain_management.py`)
-- Object-oriented domain management
-- Multiple usage scenarios
-- Production-ready examples
-- Best practices implementation
-
-### 3. Complete Programming Interface Notebook (`python-version/examples/programming_interface_complete.ipynb`)
-- Interactive Jupyter notebook
-- Step-by-step demonstrations
-- Comprehensive API coverage
-- Educational examples with explanations
-
 ## Key Programming Interface Features Demonstrated
 
 ### Domain Status Checking
-- **Go**: `fc.HasID(domain)`, `fc.HasPath(path)`
-- **Python**: `has_id(domain)`, `has_path(path)`
+- `fc.HasID(domain)`, `fc.HasPath(path)`
 
 ### Domain Configuration
-- **Go**: `fc.AddReverseProxy()`, `fc.AddWildcardRoute()`, `fc.AddSubReverseProxy()`
-- **Python**: `add_reverse_proxy()`, `add_wildcard_route()`, `add_sub_reverse_proxy()`
+- `fc.AddReverseProxy()`, `fc.AddWildcardRoute()`, `fc.AddSubReverseProxy()`
 
 ### Domain Deletion
-- **Go**: `fc.DeleteRoute(id)`
-- **Python**: `del_id(id)`
+- `fc.DeleteRoute(id)`
 
 ### Configuration Management
-- **Go**: `fc.GetConfig(path)`, `fc.PutConfig()`
-- **Python**: `gcfg(path)`, `pcfg()`
+- `fc.GetConfig(path)`, `fc.PutConfig()`
 
 ## Running the Examples
-
-### Go Examples
 
 ```bash
 # Basic example
@@ -102,33 +70,11 @@ cd examples/domain-management
 go run main.go
 ```
 
-### Python Examples
-
-```bash
-cd python-version/examples
-
-# Advanced example
-python3 advanced_example.py
-
-# Domain management example
-python3 domain_management.py
-
-# Jupyter notebook
-jupyter notebook programming_interface_complete.ipynb
-```
-
 ## Prerequisites
 
-### For Go Examples
 - Go 1.24+ installed
 - Caddy server running on `localhost:2019`
 - FastCaddy Go module available
-
-### For Python Examples
-- Python 3.8+ installed
-- Required packages: `fastcore`, `httpx`
-- Caddy server running on `localhost:2019`
-- FastCaddy Python package available
 
 ## Common Use Cases Covered
 
